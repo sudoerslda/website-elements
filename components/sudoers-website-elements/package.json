@@ -1,0 +1,20 @@
+{
+  "name":               "website-elements",
+  "version":            "0.0.1",
+  "private":            true,
+  "author":             "HERAULT-MARTIN Pierre<HicksCorp@GMail.com>",
+  "description":        "Polymer precompilation stack..",
+  "repository":         "https://Gogs.PierreQR.fr/sudoers/website-elements/",
+  "readme":             "Polymer precompilation stack..",
+  "license":            "CC-BY-NC-4.0",
+  "devDependencies": {
+    "gulp":                     "~3.9.0",
+    "gulp-reload":              "0.0.4",
+    "gulp-uglify":              "^1.5.1",
+    "gulp-minify-inline":       "^0.1.1",
+    "gulp-autoprefixer":        "~2.3.1",
+    "gulp-haml":                "~0.1.5",
+    "gulp-coffee":              "~2.3.1",
+    "gulp-sass":                "~2.0.4"
+  }
+}
