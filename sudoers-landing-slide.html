@@ -1,0 +1,38 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-flex-layout/iron-flex-layout.html">
+
+<dom-module id="sudoers-landing-slide">
+  <template>
+    <style>
+      :host {
+        max-width:              1200px;
+        display:                block;
+        color:                  var(--slide-fg-color);
+        background-color:       var(--slide-bg-color);
+        padding:                0 0 var(--slide-vmargin) 0;
+        margin:                 0 auto 0 auto;
+      }
+      :host:not(:last-child) {
+        min-height:             calc( 100vh - var(--slide-vmargin) - var(--next-slide-border-height) );
+        border-bottom:          var(--next-slide-border-height) solid var(--accent-s-color);
+      }
+      :host:last-child {
+        min-height:             calc( 100vh - var(--slide-vmargin) );
+      }
+      :host::content.slide-content {
+        @apply                  (--layout-horizontal);
+        @apply                  (--layout-wrap);
+        @apply                  (--layout-center-justified);
+      }
+    </style>
+    <content></content>
+  </template>
+</dom-module>
+<script>
+  (function() {
+    'use strict';
+    Polymer({
+      is:         'sudoers-landing-slide'
+    });
+  })();
+</script>

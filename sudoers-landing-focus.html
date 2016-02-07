@@ -1,0 +1,38 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<dom-module id="sudoers-landing-focus">
+  <template>
+    <style>
+      :host {
+        position:               relative;
+        width:                  300px;
+        margin:                 var(--slide-vmargin) 10px 0 10px;
+      }
+      img {
+        width:                  200px;
+        height:                 200px;
+      }
+      h1, h2, h3, h4, h5 {
+        text-align:             center;
+      }
+      :host::content {
+        text-align:             center;
+      }
+    </style>
+    <img src="[[image]]">
+    <h3>[[title]]</h3>
+    <content></content>
+  </template>
+</dom-module>
+<script>
+  (function() {
+    'use strict';
+    Polymer({
+      is:         'sudoers-landing-focus',
+      properties: {
+        image:      String,
+        title:      String
+      }
+    });
+  })();
+</script>
